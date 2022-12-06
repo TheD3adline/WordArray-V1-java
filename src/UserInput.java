@@ -14,6 +14,7 @@ public class UserInput {
             input = sc.next() + "\n";
             boolean flag = false;
             lengthOfWord = 0;
+            checkChar = 0;
             for(int i = 0; i < 6; i++) {
                 if(input.charAt(i) != '\n') {
                     lengthOfWord++;
@@ -34,14 +35,14 @@ public class UserInput {
             }
             if(lengthOfWord != checkChar) {
                 flag = true;
-                checkChar = 0;
             }
             while(flag) {
                 System.out.println("Invalid input!");
                 System.out.print("Enter word for search (Between 2 and 5 characters in length and All CAPS): ");
                 input = sc.next() + "\n";
-                lengthOfWord = 0;
                 flag = false;
+                lengthOfWord = 0;
+                checkChar = 0;
                 for(int i = 0; i < 6; i++) {
                     if(input.charAt(i) != '\n') {
                         lengthOfWord++;
@@ -62,7 +63,6 @@ public class UserInput {
                 }
                 if(lengthOfWord != checkChar) {
                     flag = true;
-                    checkChar = 0;
                 }
             }
             if((lengthOfWord < 2) || (lengthOfWord > 5)) {
