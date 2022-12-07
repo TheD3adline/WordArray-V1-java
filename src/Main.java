@@ -6,12 +6,9 @@ public class Main {
                             {'H', 'A', 'L', 'L', 'O'},
                             {'X', 'Q', 'W', 'F', 'I'},
                             {'V', 'I', 'R', 'Q', 'T'}};
-        char[] word;
 
         Board board = new Board(letters);
 
-        word = board.getWord();
-
-        board.searchField(board.getFields(), word);
+        board.searchField(board.getFields(), board.getWord());
     }
 }
