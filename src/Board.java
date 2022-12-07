@@ -1,12 +1,8 @@
-import java.util.Scanner;
-
 public class Board {
 
-    private Field[][] fields;
+    private final Field[][] fields;
     final int[] x = {-1, -1, -1, 0, 0, 1, 1, 1};
     final int[] y = {-1, 0, 1, -1, 1, -1, 0, 1};
-
-    Scanner sc = new Scanner(System.in);
 
     public Board(char[][] givenLetters) {
         fields = new Field[givenLetters.length][givenLetters[0].length];

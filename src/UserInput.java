@@ -2,13 +2,13 @@ import java.util.Scanner;
 
 public class UserInput {
 
-    private static Scanner sc = new Scanner(System.in);
-    private static String validCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    private static final Scanner sc = new Scanner(System.in);
+    private static final String validCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     public static String getUserInput() {
         int lengthOfWord;
-        int checkChar = 0;
-        String input = "";
+        int checkChar;
+        String input;
         do {
             System.out.print("Enter word for search (Between 2 and 5 characters in length and All CAPS): ");
             input = sc.next() + "\n";
