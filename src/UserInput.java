@@ -1,5 +1,11 @@
+/*
+    Author: Michael Fessler
+    Date: 2022/12/7
+    Version: 0.1
+    Description:
+            Class to process the user input for the word to be searched.
+ */
 import java.util.Scanner;
-
 public class UserInput {
 
     private static final Scanner sc = new Scanner(System.in);

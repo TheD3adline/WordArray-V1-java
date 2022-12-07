@@ -1,3 +1,11 @@
+/*
+    Author: Michael Fessler
+    Date: 2022/12/7
+    Version: 0.1
+    Description:
+            The board class with all its methods, to instantiate the field of characters and put given characters
+            into the different fields, and methods for searching the field for the input.
+ */
 public class Board {
 
     private final Field[][] fields;
