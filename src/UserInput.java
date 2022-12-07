@@ -69,6 +69,6 @@ public class UserInput {
                 System.out.println("Invalid input!");
             }
         } while((lengthOfWord < 2) || (lengthOfWord > 5));
-        return input;
+        return input + "\n";
     }
 }
